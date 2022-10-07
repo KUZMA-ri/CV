@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a:focus,a:active{
+    outline: none;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+    background-color: rgb(39, 58, 58);
+}
+@media (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 40%;
+    min-height: 100%;
+    color: white;
+    padding: 15px;
+}
+
+.about__person{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.person__photo {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+.person__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person__name {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.person__last-name{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.person__position {
+    margin-bottom: 25px;
+}
+
+.about__information {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.information__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.information__title::after {
+    content: '';
+    display: block;
+    border: 1px solid white;
+    background-color: #fff;
+    opacity: 0.4;
+    margin-top: 5px;
+}
+.information__description {
+    font-size: 16px;
+}
+
+.about__contacts {
+    padding: 0 15px;
+}
+
+.contacts__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+
+.contacts__link-text{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.info {
+    background-color: #fff;
+    border-radius: 10px;
+    min-width: 60%;
+    padding: 20px 30px;
+}
+
+.info__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__dates {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info__desc {
+    margin-bottom: 15px;
+}
+
+.info__title{
+    margin-top: 25px;
+}
+
+.info__title::after {
+    content: '';
+    border-bottom: 2px solid rgb(39, 58, 58);
+}
+
+.info__skills-item {
+    list-style:circle;
+    margin-left: 30px;
+}
+
+.info__hobbies-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.info__hobbies-img {
+    width: 50px;
+    height: 50px;
+    margin: 20px 10px;
+}
